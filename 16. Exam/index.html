@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Pet Shelter</title>
+</head>
+
+<body>
+  <div id="navBody">
+
+    <div id="navBarHead">
+      <div id="navBarHeadLeft">
+        <img src="./assets/heart-light.png" alt="clipart of a heart">
+        <h1>Pet Shelter</h1>
+      </div>
+      <div id="navBarHeadRight">
+        <a href="#">Find a Pet</a>
+        <a href="#">About</a>
+        <button onclick="this.remove()">Donate</button>
+      </div>
+    </div>
+
+    <form id="lookUpForm">
+      <div class="navLookUp">
+        <label>
+          <p>I'm looking for a...</p>
+          <img src="./assets/paw-light.png" alt="animal paw clipart">
+          <select name="pet">
+            <option class="choice">Any Pet</option>
+            <option class="choice">Cat</option>
+            <option class="choice">Dog</option>
+          </select>
+        </label>
+      </div>
+      <div class=" navLookUp">
+        <label>
+          <p>in or near...</p>
+          <img src="./assets/pin-light.png" alt="map pin icon">
+          <input type="text" placeholder="City or Zip Code">
+        </label>
+      </div>
+      <input type="submit" value="Find your new best friend">
+    </form>
+
+  </div>
+
+  <div id="adoptFeed">
+    <div class="adoptListing">
+      <img src="./assets/pepper.jpg" alt="picture of Pepper the tabby cat">
+      <div class="adoptInfo">
+        <h2>Pepper</h2>
+        <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+      </div>
+      <div class="petPet">
+        <p><span id="pepperPets">3</span> petting(s)</p>
+        <button onclick="addToPets(pepperPets)">Pet Pepper</button>
+      </div>
+    </div>
+    <div class="adoptListing">
+      <img src="./assets/bruce.jpg" alt="picture of Bruce the weiner dog">
+      <div class="adoptInfo">
+        <h2>Bruce</h2>
+        <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+      </div>
+      <div class="petPet">
+        <p><span id="brucePets">5</span> petting(s)</p>
+        <button onclick="addToPets(brucePets)">Pet Bruce</button>
+      </div>
+    </div>
+    <div class="adoptListing">
+      <img src="./assets/oscar.jpg" alt="picture of Oscar the healer dog">
+      <div class="adoptInfo">
+        <h2>Oscar</h2>
+        <p>Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+      </div>
+      <div class="petPet">
+        <p><span id="oscarPets">8</span> petting(s)</p>
+        <button onclick="addToPets(oscarPets)">Pet Oscar</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
